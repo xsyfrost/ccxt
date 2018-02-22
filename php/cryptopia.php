@@ -238,7 +238,7 @@ class cryptopia extends Exchange {
             'last' => $last,
             'change' => $change,
             'percentage' => floatval ($ticker['Change']),
-            'average' => ($last . $open) / 2,
+            'average' => ($last + $open) / 2,
             'baseVolume' => $baseVolume,
             'quoteVolume' => $quoteVolume,
         );
